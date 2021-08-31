@@ -9,7 +9,6 @@ dy = [0, 0, -1, 1]
 for i in range(n):
     s.append(list(map(int, input().split())))
 
-
 def bfs():
     while queue:
         a, b = queue.popleft()
@@ -30,19 +29,19 @@ for i in range(n):
 
 bfs()
 
-# print("@@@ s2 : ", s)
-# print("@@@ queue2 : ", queue)
+print("@@@ s2 : ", s)
+print("@@@ queue2 : ", queue)
 
 isTrue = False
 result = -2
 for i in s:
     # print("i : ", i)
     for j in i:
-      # print("j : ", j)
-        if j == 0:
-            isTrue = True
-        result = max(result, j)
-        # print("in result : ", result)
+      print("j : ", j)
+      if j == 0:
+          isTrue = True
+      result = max(result, j)
+      print("in result : ", result)
 # print("result : ", result)
 if isTrue == True:
     print(-1)

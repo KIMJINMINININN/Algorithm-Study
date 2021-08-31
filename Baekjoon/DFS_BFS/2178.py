@@ -15,6 +15,7 @@ def bfs(x, y):
   queue = deque()
   queue.append((x, y))
   while queue:
+    # print(f"@@@@@@@graph : {graph}")
     x, y = queue.popleft()
     # 현재 위치에서 네 방향으로 위치 확인
     for i in range(4):
