@@ -7,3 +7,4 @@ for i in range(a):
 
 for [first, last] in myList:
     print(first+last)
+
